@@ -85,16 +85,16 @@ public class Program
 
         Console.WriteLine("\n___HASHSET, DICTIONARY___");
         ll = new CustomLinkedList();
-        ll.add(1);
-        ll.add(2);
-        ll.add(3);
-        ll.add(4);
-        ll.add(5);
-        ll.add(6);
+        ll.add(1); ll.add(2); ll.add(3); ll.add(4); ll.add(5); ll.add(6);
         ll.FormACycle(2, 5);
         Console.WriteLine("Cycle" + ll.hasCycle());
 
-        var h =new HashDataStructures();
+        var h = new HashDataStructures();
         h.UseDictionary();
+
+        Console.WriteLine("____TREE____");
+        var bst = new BinarySearchTree();
+        bst.Insert(1); bst.Insert(0); bst.Insert(5);
+        bst.Insert(6); bst.Insert(3); bst.Insert(4);
     }
 }
