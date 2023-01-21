@@ -122,5 +122,9 @@ public class Program
         bst.InOrderTraversal();
         bst.PreOrderTraversal();
         bst.PostOrderTraversal();
+        Console.WriteLine();
+        Console.WriteLine(bst.BinarySearch(6));
+        Console.WriteLine(bst.BinarySearch(10));
+
     }
 }

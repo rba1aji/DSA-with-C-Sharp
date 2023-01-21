@@ -1,4 +1,6 @@
-﻿namespace DSAlgorithms
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace DSAlgorithms
 {
     public class BinarySearchTree
     {
@@ -17,7 +19,7 @@
             {
                 this.data = data;
                 this.left = null;
-                this.right = null;  
+                this.right = null;
             }
         }
 
@@ -94,6 +96,19 @@
             PreOrderTraversal(root.left);
             PreOrderTraversal(root.right);
             Console.Write(root.data + " ");
+        }
+
+        public bool BinarySearch(int key)
+        {
+            Console.WriteLine($"search for {key}");
+            return BinarySearch(root, key);
+        }
+        private bool BinarySearch(Node root, int key)
+        {
+            if (root == null) return false;
+            if (key > root.data) return BinarySearch(root.right, key);
+            if (key < root.data) return BinarySearch(root.left, key);
+            return true;
         }
     }
 
