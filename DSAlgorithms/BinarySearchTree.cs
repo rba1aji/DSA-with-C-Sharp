@@ -23,7 +23,7 @@
 
         public void Insert(int data)
         {
-            root = Insert(root, data);
+            Insert(ref root, data);
 
             //if (root == null)
             //    root = new Node(data);
@@ -34,13 +34,13 @@
             //Console.WriteLine("inserted " + data);
         }
 
-        private Node Insert(Node root, int data)
+        private void Insert(ref Node root, int data)
         {
             if (root == null) root = new Node(data);
-            else if (root.data < data) root.right = Insert(root.right, data);
-            else root.left = Insert(root.left, data);
+            else if (root.data < data) Insert(ref root.right, data);
+            else Insert(ref root.left, data);
             Console.WriteLine("inserted" + data);
-            return root;
+            //return root;
         }
 
         //private Node Insert(int data, Node r)
