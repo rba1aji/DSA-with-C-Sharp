@@ -109,16 +109,18 @@ public class Program
 
 
 
-
         Console.WriteLine("____TREE____");
 
         var bst = new BinarySearchTree();
 
-        bst.Insert(2); bst.Insert(5); bst.Insert(1);
-        bst.Insert(6); bst.Insert(3); bst.Insert(4);
-        //    2
-        //  1    5
-        //~  3  4  6    
+        bst.Insert(5); bst.Insert(3); bst.Insert(2);
+        bst.Insert(4); bst.Insert(7); bst.Insert(6); bst.Insert(8);
+        //     8
+        //  7    9
+        // 6
+        //5
         bst.InOrderTraversal();
+        bst.PreOrderTraversal();
+        bst.PostOrderTraversal();
     }
 }
