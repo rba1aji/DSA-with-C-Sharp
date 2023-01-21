@@ -17,35 +17,36 @@ public class Program
 
         Console.WriteLine($"Linear Search: {ob.LinearSearch(arr, 1)}");
         Console.WriteLine($"Linear Search: {ob.LinearSearch2(arr, 1)}");
-
         Console.WriteLine($"Binary Search: {ob.BinarySearch(arr, 4)}");
+        Console.WriteLine();
 
+        Console.WriteLine("reverse array");
         ob.ReverseArray(ref arr);
-
         void cw(int i)
         {
             Console.Write(i + ",");
         }
         Array.ForEach(arr, cw);
 
+        Console.WriteLine("\nRotate Array");
         ob.RotateArrayLeft(ref arr, 2);
         Array.ForEach(arr, Console.Write);
 
-        Console.WriteLine("\n___LINKED LIST___");
+
+
+        Console.WriteLine("\n\n___LINKED LIST___");
 
         var ll = new CustomLinkedList();
-        ll.add(1);
-        ll.add(2);
-        ll.add(3);
-        ll.add(4);
-        ll.add(5);
-        ll.add(6);
-        ll.add(7);
+        ll.add(1); ll.add(2); ll.add(3);
+        ll.add(4); ll.add(5);
+        ll.add(6); ll.add(7);
 
         ll.Display();
+
+        Console.Write("\nDelete 4");
         ll.DeleteNodeByIndex(4);
-
         ll.Display();
+
         ll.RemoveBackHalf();
         ll.Display();
 
@@ -57,7 +58,12 @@ public class Program
         //{
         //    Console.WriteLine(node);
         //}
-        Console.WriteLine();
+        Console.WriteLine("\n");
+
+
+
+
+
         Console.WriteLine("___STACK QUEUE___");
         Console.WriteLine();
 
@@ -67,10 +73,13 @@ public class Program
         Array.ForEach(bin, Console.WriteLine);
 
         var st = new StackAlgorithms();
+        Console.WriteLine("next greater elements in arr");
         st.nextGreaterElements(new int[] { 15, 8, 4, 10 });
 
-        Console.WriteLine(st.isMatchedParanthesis("(HEllo))")
-            + " " +
+        Console.WriteLine("paranthesis match");
+        Console.WriteLine(
+        st.isMatchedParanthesis("(HEllo))")
+        + " " +
         st.isMatchedParanthesis("(HEl(l)o)")
         + " " +
         st.isMatchedParanthesis("(HEllo)")
@@ -80,21 +89,36 @@ public class Program
         st.isMatchedParanthesis2("(HEl((l))o)")
         + " " + st.isMatchedParanthesis("(HEl(l)o)")
         + " " + st.isMatchedParanthesis("HEl(l)o)")
-            );
+        );
+
+
 
 
         Console.WriteLine("\n___HASHSET, DICTIONARY___");
+
         ll = new CustomLinkedList();
-        ll.add(1); ll.add(2); ll.add(3); ll.add(4); ll.add(5); ll.add(6);
+
+        ll.add(1); ll.add(2); ll.add(3);
+        ll.add(4); ll.add(5); ll.add(6);
+
         ll.FormACycle(2, 5);
         Console.WriteLine("Cycle" + ll.hasCycle());
 
         var h = new HashDataStructures();
         h.UseDictionary();
 
+
+
+
         Console.WriteLine("____TREE____");
+
         var bst = new BinarySearchTree();
-        bst.Insert(1); bst.Insert(0); bst.Insert(5);
+
+        bst.Insert(2); bst.Insert(5); bst.Insert(1);
         bst.Insert(6); bst.Insert(3); bst.Insert(4);
+        //    2
+        //  1    5
+        //~  3  4  6    
+        bst.InOrderTraversal();
     }
 }

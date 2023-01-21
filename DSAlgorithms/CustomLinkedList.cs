@@ -38,7 +38,7 @@ namespace DSAlgorithms
 
         public void Display()
         {
-            Console.WriteLine("\nDisplaying");
+            Console.Write("\nDisplaying");
             Node t = head;
             while (t != null)
             {
@@ -58,47 +58,48 @@ namespace DSAlgorithms
                 slow = slow.next;
                 fast = fast.next.next;
             }
-            Console.WriteLine($"slow{slow.data}fast{fast}");
+            //Console.WriteLine($"slow{slow.data}fast{fast}");
             return mid;
         }
         public void RemoveBackHalf()
         {
+            Console.WriteLine("\nremove back half");
             Node mid = FindMid();
             mid.next = null;
         }
- 
+
         public void DeleteNodeByIndex(int index)
         {
             Node t = head;
             for (int i = 0; i < index - 2; i++)
             {
-                Console.WriteLine(t.data+" -..-"+ (i+1));
+                //Console.WriteLine("\n" + t.data + " del" + (i + 1));
                 t = t.next;
             }
-            t.next = t.next.next; 
+            t.next = t.next.next;
 
         }
 
         internal void FormACycle(int a, int b)
         {
             Node an = head;
-            for(int i = 1; i < a; i++)
+            for (int i = 1; i < a; i++)
             {
-                an=an.next;
+                an = an.next;
             }
             Node bn = head;
-            for(int i=1;i<b;i++)
+            for (int i = 1; i < b; i++)
             {
-                bn=bn.next;
+                bn = bn.next;
             }
             bn.next = an;
-            
+
         }
 
         internal bool hasCycle()
         {
             var hs = new HashSet<Node>();
-            Node node= head;
+            Node node = head;
             while (node != null)
             {
                 if (!hs.Add(node)) return true;
