@@ -1,0 +1,15 @@
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\bin\Debug\net6.0\DSAlgorithms.exe
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\bin\Debug\net6.0\DSAlgorithms.deps.json
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\bin\Debug\net6.0\DSAlgorithms.runtimeconfig.json
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\bin\Debug\net6.0\DSAlgorithms.dll
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\bin\Debug\net6.0\DSAlgorithms.pdb
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.csproj.AssemblyReference.cache
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.AssemblyInfoInputs.cache
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.AssemblyInfo.cs
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.dll
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\refint\DSAlgorithms.dll
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.pdb
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\DSAlgorithms.genruntimeconfig.cache
+C:\Users\Balaji\PersonalProjects\DSAlgorithms\DSAlgorithms\obj\Debug\net6.0\ref\DSAlgorithms.dll
